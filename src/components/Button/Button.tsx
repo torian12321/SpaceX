@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { IButton } from './Button.interfaces';
-import styles from './Button.module.css';
+import styles from './Button.module.scss';
 
 const Button = ({
   children,

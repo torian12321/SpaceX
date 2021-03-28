@@ -2,7 +2,6 @@ import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import Loader from './components/Loader';
 import LaunchCards from './components/LaunchCard';
-// import logo from './logo.svg';
 import './App.css';
 
 const query = gql`{
@@ -47,14 +46,15 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading && <>Loading....</>}
-
       <h2>Last launches 🚀</h2>
-      <Loader />
-      <LaunchCards.List>
-        {/* @ts-ignore */}
-        <List data={data} />
-      </LaunchCards.List>
+      {loading
+        ? <Loader />
+        : (
+          <LaunchCards.List>
+            {/* @ts-ignore */}
+            <List data={data} />
+          </LaunchCards.List>
+        )}
     </div>
   );
 };

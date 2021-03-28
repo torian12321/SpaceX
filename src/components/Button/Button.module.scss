@@ -9,10 +9,11 @@
   cursor: pointer;
   transition: background .8s;
   outline: none;
-}
 
-.btn:hover {
-  background: #d1e7fb;
+  
+  &:hover {
+    background: #d1e7fb;
+  }
 }
 
 .disabled {
