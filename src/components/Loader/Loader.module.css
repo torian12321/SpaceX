@@ -1,0 +1,11 @@
+.loader {
+  margin: auto;
+  font-size: 68px;
+  height: 1em;
+  width: 1em;
+
+  background: transparent;
+  border-radius: 50%;
+  border: .1em solid red;
+  border-top-color: blue;
+}
