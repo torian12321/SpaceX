@@ -8,10 +8,13 @@ const formatDate = (date: string) => {
   return `${d.getDate()}/${d.getMonth()}${d.getFullYear()}`;
 }
 
-const Card = ({ title, details, date }: ILaunchCard) => {
+const Card = ({ id, title, details, date, onClick }: ILaunchCard) => {
+  const handleOnClick = () => {
+    onClick(id);
+  };
 
-  return (
-    <article className={styles.card}>
+  return !!details ? (
+    <article className={styles.card} onClick={handleOnClick} role='button'>
       <h1 className={styles.title}>{title}</h1>
       <p>{details}
       </p>
@@ -19,7 +22,7 @@ const Card = ({ title, details, date }: ILaunchCard) => {
         {formatDate(date)}
       </span>
     </article>
-  );
+  ) : null;
 };
 
 Card.List = List;

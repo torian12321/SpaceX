@@ -1,0 +1,28 @@
+.header {
+  height: 280px;
+  background: #a5a5a5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-r) var(--border-r) 0 0;
+  background-image: url('https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.webp');
+}
+
+.body {
+  padding: 24px;
+}
+.title {
+  display: block;
+  text-align: center;
+  margin: 0 0 24px;
+  font-size: 22px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0;
+
+  & > button {
+    margin: 0 0 8px;
+  }
+}
