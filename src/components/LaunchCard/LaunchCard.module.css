@@ -18,13 +18,15 @@
   flex-direction: column;
   text-align: justify;
   background: white;
-  border: 1px solid black;
+  color: #222;
+  border: 2px solid var(--color-main-light);  
   border-radius: var(--border-r);
   font-size: 14px;
   cursor: pointer;
 }
 
 .title {
+  color: var(--color-main);
   font-size: 1.8em;
   margin: 0 0 8px;
 }

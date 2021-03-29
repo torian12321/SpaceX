@@ -1,18 +1,17 @@
 .btn {
   padding: 12px 16px;
   min-width: 100px;
-  color: #3970a3;
+  color: white;
   font-weight: bold;
-  background: red;
-  border: 1px solid red;
-  border-radius: 8px;
+  background: var(--color-main);
+  border: 1px solid var(--color-main);
+  border-radius: var(--border-r);
   cursor: pointer;
   transition: background .8s;
   outline: none;
 
-  
   &:hover {
-    background: #d1e7fb;
+    background: var(--color-main-light);
   }
 }
 

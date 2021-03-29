@@ -1,0 +1,24 @@
+.app {
+  position: relative;
+  text-align: center;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .4;
+  background-image: url("https://www.dropbox.com/s/ac9efh6oqu3docb/stars.png?raw=1");
+  background-repeat: repeat;
+  background-size: 400px auto;
+
+  -webkit-animation: stars 3s infinite linear;
+  animation: stars 3s infinite linear;
+}
+
+@keyframes stars {
+  0% { background-position: 0 -400px; }
+  100% { background-position: 0 0; }
+}
