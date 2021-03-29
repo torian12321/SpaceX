@@ -4,7 +4,7 @@ import Loader from '../components/Loader';
 import LaunchCards from '../components/LaunchCard';
 import { useModal } from "../components/Modal";
 import { ModalDetails } from "./ModalDetails";
-import './App.css';
+import styles from './App.module.scss';
 
 const query = gql`{
   launchesPast(limit: 10) {
@@ -57,25 +57,26 @@ const App = () => {
 
   return (
     <>
-    <ModalDetails closeAction={hiddeModal} isVisible={isVisible} data={selectedLaunch} />
+      <div className={styles.bg} />
+      <ModalDetails closeAction={hiddeModal} isVisible={isVisible} data={selectedLaunch} />
 
-    <div className="App">
-      <h2>Last launches 🚀</h2>
-      {loading
-        ? <Loader />
-        : (
-          <LaunchCards.List>
-            {launchesPast.map((launch: Launche) => <LaunchCards
-              key={launch.id}
-              id={launch.id}
-              title={launch.mission_name}
-              details={launch.details}
-              date={launch.launch_date_utc}
-              onClick={handleClickLaunchCard}
-          />)}
-          </LaunchCards.List>
-        )}
-    </div>
+      <div className={styles.app}>
+        <h2>Last launches 🚀</h2>
+        {loading
+          ? <Loader />
+          : (
+            <LaunchCards.List>
+              {launchesPast.map((launch: Launche) => <LaunchCards
+                key={launch.id}
+                id={launch.id}
+                title={launch.mission_name}
+                details={launch.details}
+                date={launch.launch_date_utc}
+                onClick={handleClickLaunchCard}
+            />)}
+            </LaunchCards.List>
+          )}
+      </div>
     </>
   );
 };
