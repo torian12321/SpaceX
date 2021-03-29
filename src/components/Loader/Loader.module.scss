@@ -1,5 +1,3 @@
-$color: blue;
-
 @keyframes moveInFromLeft {
   0%    { transform: rotate(0); }
   100%  { transform: rotate(360deg); }
@@ -13,8 +11,8 @@ $color: blue;
 
   background: transparent;
   border-radius: 50%;
-  border: .1em solid rgba($color, .5);
-  border-top-color: $color;
+  border: .1em solid var(--color-main-light);
+  border-top-color: var(--color-main);
 
   animation: 1s ease infinite;
   animation-name: moveInFromLeft;

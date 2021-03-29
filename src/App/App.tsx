@@ -40,8 +40,7 @@ const App = () => {
     const mission: Launche = launchesPast.find((launch: Launche) => launch.id === id)
     const { links } = mission;
     const { flickr_images = [] } = links;
-    // console.log(flickr_images);
-    console.log(mission);
+
     setSelectedLaunch({
       title: mission.mission_name,
       desc: mission.details,

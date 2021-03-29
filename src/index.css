@@ -1,4 +1,11 @@
 :root {
+  --color-bg: #1c272b;
+  --color-bg-light: #2c3b41;
+
+  --color-main: #ff6c37;
+  --color-main-light: #ff9770;
+  --color-sec: #306d71;
+  --color-sed-light: #b2cad4;
   --border-r: 8px;
 }
 
@@ -9,6 +16,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0deg, rgb(28, 39, 43) 2.48%, rgb(43, 59, 65) 92.32%);
+  min-height: 100vh;
+  color: white;
 }
 
 code {
