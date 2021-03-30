@@ -9,6 +9,7 @@ const Button = ({
   onClick,
   disabled = false,
   type = 'button',
+  outline = false,
 }: IButton) => {
   const content = children || label;
   const handleClick = () => {
@@ -21,6 +22,7 @@ const Button = ({
     <button
       className={classNames(
         styles.btn,
+        outline && styles.outline,
         disabled && styles.disabled,
       )}
       onClick={handleClick}

@@ -7,7 +7,7 @@
   border: 1px solid var(--color-main);
   border-radius: var(--border-r);
   cursor: pointer;
-  transition: background .8s;
+  transition: background var(--animation-time);
   outline: none;
 
   &:hover {
@@ -20,4 +20,13 @@
   border-color: #eee;
   color: #aaa;
   cursor: not-allowed;
+}
+
+.outline {
+  background: white;
+  color: var(--color-main);
+
+  &:hover {
+    background: #eee;
+  }
 }

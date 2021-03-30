@@ -23,6 +23,12 @@
   border-radius: var(--border-r);
   font-size: 14px;
   cursor: pointer;
+  transform: scale(.95);
+  transition: transform var(--animation-time);
+
+  &:hover {
+    transform: scale(1);
+  }
 }
 
 .title {

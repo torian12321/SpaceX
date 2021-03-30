@@ -4,4 +4,5 @@ export interface IButton {
   onClick: Function,
   disabled?: boolean,
   type?: 'button' | 'submit' | 'reset',
+  outline?: boolean,
 };

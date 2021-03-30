@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './LaunchCard.List';
 import  { ILaunchCard } from './LaunchCard.interfaces';
-import styles from './LaunchCard.module.css';
+import styles from './LaunchCard.module.scss';
 
 const formatDate = (date: string) => {
   const d = new Date(date);
