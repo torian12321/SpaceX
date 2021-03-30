@@ -21,7 +21,7 @@ const ModalDetails = ({ closeAction, isVisible, data }: IModalDetails) => {
         <span>{desc}</span>
 
         <div className={styles.options}>
-          <Button onClick={closeAction} label='Close' />
+          <Button onClick={closeAction} label='Close' outline />
           {!!link &&
             <Button onClick={handleRedirection} label='See more' />
           }
