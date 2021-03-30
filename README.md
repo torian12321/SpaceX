@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Basic info
+
+App to show the latest launches from [space-x](https://www.spacex.com/).
+Check the result [here](https://torian12321.github.io/SpaceX/)
 
 ## Setup Instructions
 
